@@ -5,8 +5,11 @@ using System.Text;
 
 ConnectionFactory factory = new();
 
+
 // bağlantı oluşturma
-factory.Uri = new("amqps://fkudeoip:aU7HKGiz5pqCZ1YiEDj_PKeJK0dvCKAs@rattlesnake.rmq.cloudamqp.com/fkudeoip");
+// rabbitmq cloud amqp bağlantı stringi
+factory.Uri = new("...");
+
 
 // bağlantıyı aktifleştirme ve kanal açma
 using IConnection connection = await  factory.CreateConnectionAsync();
